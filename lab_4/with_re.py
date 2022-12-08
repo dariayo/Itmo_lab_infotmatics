@@ -1,6 +1,6 @@
 import time
 import re
-input = open('/Users/dasha/Desktop/a.json', 'r', encoding='utf-8')
+input = open('/Users/dasha/Desktop/a.json','r', encoding='utf-8')
 output = open('/Users/dasha/Desktop/a.yaml', 'w', encoding='utf-8')
 
 start_time = time.perf_counter()
