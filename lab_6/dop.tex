@@ -1,0 +1,233 @@
+\documentclass{article}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[left=1.75cm,right=1.75cm,top=1cm,bottom=1cm]{geometry}
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[russian]{babel}
+\begin{document}
+\begin{multicols}{2}
+
+\begin{tikzpicture}
+    \draw[red,dashed, ultra thick] (0,0)--(2,4);
+    \draw[red,thick] (2,4)--(4,0);
+    \node at (-0.5,0) {$D$};
+    \node at (2,4.4) {$B$};
+    \node at (2,-0.2) {$A$};
+    \node at (4.5,0) {$C$};
+    \draw[black,thick] (2,0)--(4,0);
+    \draw[black,dashed, ultra thick] (0,0)--(2,0);
+    \draw[blue,thick] (2,4)--(2,0);
+    \begin{scope}
+    \clip (-2,0) rectangle (2,1.5);
+    \draw (2,0) circle(1);
+    \fill[color=orange] (2,0) circle(1);
+
+\end{scope}
+\end{tikzpicture}
+
+
+
+\begin{minipage}{0.5\textwidth}
+  \begin{flushright}
+\textbf{74 КНИГА I ПРЕДЛ.XLVIII.ТЕОРЕМА}
+   
+\begin{figure}[H]
+\begin{subfigure}
+        \includegraphics[width=0.1\textwidth]{so.png}
+        сли в треугольнике квадрат одной стороны 
+        \begin{tikzpicture}
+            \draw[orange, ultra thick] (0,0)--(2,0);
+            \node at (-0.2,0) {$B$};
+            \node at (2.3,0) {$C$};
+        \end{tikzpicture}
+        равен сумме квадратов двух других сторон
+        \begin{tikzpicture}
+            \draw[blue, ultra thick] (0,0)--(2,0); 
+            \node at (-0.2,0) {$A$};
+            \node at (2.3,0) {$B$};
+        \end{tikzpicture}
+        \textbf{и}
+        \begin{tikzpicture}
+            \draw[black, ultra thick] (0,0)--(2,0); \node at (-0.2,0) {$A$};
+            \node at (2.3,0) {$C$};
+        \end{tikzpicture}
+        ,то угол 
+        заключенный между этими двумя сторонами прямой.
+        \centering
+            Проведем
+            \begin{tikzpicture}
+              \draw[black,dashed, ultra thick] (0,0)--(1,0);  
+              \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$D$};
+            \end{tikzpicture}
+            \begin{tikzpicture}
+                \draw[black,thick] (0,0) -- (0,0.5);
+                \draw[black,thick] (-0.2,0) -- (0.2,0);
+            \end{tikzpicture}
+            \begin{tikzpicture}
+                \draw[blue, ultra thick] (0,0)--(1,0);
+                \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$B$};  
+            \end{tikzpicture}
+            
+            и = 
+            \begin{tikzpicture}
+                \draw[black, ultra thick] (0,0)--(1,0);  
+                \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$C$};
+            \end{tikzpicture}
+            (пр. I.11, I.3)
+
+            также проведем
+            \begin{tikzpicture}
+                \draw[orange,dashed, ultra thick]
+                (0,0)--(1,0);  
+                \node at (-0.2,0) {$B$};
+            \node at (1.1,0) {$D$};
+            \end{tikzpicture}
+            
+            Поскольку 
+        \begin{tikzpicture}
+                \draw[black,dashed, ultra thick] (0,0)--(1,0); 
+                \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$D$};
+            \end{tikzpicture}
+        =
+        \begin{tikzpicture}
+                \draw[black, ultra thick] (0,0)--(1,0);  \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$C$};
+            \end{tikzpicture}
+        (постр.)
+
+        \begin{tikzpicture}
+                \draw[black,dashed, ultra thick] (0,0)--(1,0);  
+                \node at (-0.2,0) {$A^2$};
+            \node at (1.1,0) {$D^2$};
+            \end{tikzpicture}
+        =
+        \begin{tikzpicture}
+                \draw[black, ultra thick] (0,0)--(1,0);  
+                \node at (-0.2,0) {$A^2$};
+            \node at (1.1,0) {$C^2$};
+            \end{tikzpicture}
+        ;
+
+        \therefore
+        \begin{tikzpicture}
+                \draw[black,dashed, ultra thick] (0,0)--(1,0);  
+                \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$D^2$};
+            \end{tikzpicture}
+        +\begin{tikzpicture}
+                \draw[blue, ultra thick] (0,0)--(1,0);  \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$B^2$};
+            \end{tikzpicture}
+        =\begin{tikzpicture}
+                \draw[black, ultra thick] (0,0)--(1,0);  
+                \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$C^2$};
+            \end{tikzpicture}
+        +\begin{tikzpicture}
+                \draw[blue, ultra thick] (0,0)--(1,0);  \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$B^2$};
+            \end{tikzpicture}
+
+        но \begin{tikzpicture}
+                \draw[black,dashed, ultra thick] (0,0)--(1,0);  
+                \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$D^2$};
+            \end{tikzpicture}
+        +\begin{tikzpicture}
+                \draw[blue, ultra thick] (0,0)--(1,0);  \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$B^2$};
+            \end{tikzpicture}
+        =\begin{tikzpicture}
+                \draw[orange,dashed, ultra thick] (0,0)--(1,0); 
+                \node at (-0.2,0) {$B$};
+            \node at (1.1,0) {$D^2$};
+            \end{tikzpicture}
+        (пр. I.47),
+        
+        и \begin{tikzpicture}
+                \draw[black, ultra thick] (0,0)--(1,0); 
+                \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$C^2$};
+            \end{tikzpicture}
+        +\begin{tikzpicture}
+                \draw[blue, ultra thick] (0,0)--(1,0);  \node at (-0.2,0) {$A$};
+            \node at (1.1,0) {$B^2$};
+            \end{tikzpicture}
+        =\begin{tikzpicture}
+                \draw[orange, ultra thick] (0,0)--(1,0);  
+                \node at (-0.2,0) {$B$};
+            \node at (1.1,0) {$C^2$};
+            \end{tikzpicture}
+            (гип.)
+            
+        \therefore \begin{tikzpicture}
+                \draw[orange,dashed, ultra thick] (0,0)--(1,0);  
+                \node at (-0.2,0) {$B$};
+            \node at (1.1,0) {$D^2$};
+            \end{tikzpicture}
+        =\begin{tikzpicture}
+                \draw[orange, ultra thick] (0,0)--(1,0); 
+                \node at (-0.2,0) {$B$};
+            \node at (1.1,0) {$C^2$};
+            \end{tikzpicture}
+
+        \therefore \begin{tikzpicture}
+                \draw[orange,dashed, ultra thick] (0,0)--(1,0); 
+                \node at (-0.2,0) {$B$};
+            \node at (1.1,0) {$D$};
+            \end{tikzpicture}
+        =\begin{tikzpicture}
+              \draw[orange, ultra thick] (0,0)--(1,0);  \node at (-0.2,0) {$B$};
+            \node at (1.1,0) {$C$};
+            \end{tikzpicture}
+
+        и \therefore \begin{tikzpicture}
+    \begin{scope}
+    \clip (0,0) rectangle (2,1.5);
+    \draw (2,0) circle(1);
+    \fill[color=orange] (2,0) circle(1);
+
+
+\end{scope}
+\node at (0.8,0) {$D$};
+\node at (2,0) {$A$};
+\node at (2,1.1) {$C$};
+\end{tikzpicture}
+= \begin{tikzpicture}
+    \begin{scope}
+    \clip (0,0) rectangle (2,1.5);
+    \draw (2,0) circle(1);
+    \fill[color=red] (2,0) circle(1);
+
+\end{scope}
+\end{tikzpicture}
+(пр. I.8),
+
+следовательно
+\begin{tikzpicture}
+    \begin{scope}
+    \clip (1,-2) rectangle (-2,1);
+    \draw (2,0) circle(1);
+    \fill[color=red] (2,1.5) circle(1);
+
+\end{scope}
+\end{tikzpicture}
+прямой угол.
+ч. т. д.
+        
+        
+\end{subfigure}
+\end{figure} 
+\end{flushright}
+\end{minipage}
+\end{multicols}
+
+
+\end{document}
